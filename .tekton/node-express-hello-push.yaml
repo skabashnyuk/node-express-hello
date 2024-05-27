@@ -14,7 +14,7 @@ metadata:
     appstudio.openshift.io/component: node-express-hello
     pipelines.appstudio.openshift.io/type: build
   name: node-express-hello-on-push
-  namespace: ns-gitlabnudge-jtlfubbhf0ivy
+  namespace: ns-gitlabnudge-5zrce5yfv1urx
 spec:
   params:
   - name: dockerfile
@@ -22,7 +22,7 @@ spec:
   - name: git-url
     value: '{{source_url}}'
   - name: output-image
-    value: quay.io/ksmster/ns-gitlabnudge-jtlfubbhf0ivy/build-nudge-example/node-express-hello:{{revision}}
+    value: quay.io/ksmster/ns-gitlabnudge-5zrce5yfv1urx/build-nudge-example/node-express-hello:{{revision}}
   - name: path-context
     value: .
   - name: revision
