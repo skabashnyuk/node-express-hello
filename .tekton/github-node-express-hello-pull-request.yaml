@@ -15,7 +15,7 @@ metadata:
     appstudio.openshift.io/component: github-node-express-hello
     pipelines.appstudio.openshift.io/type: build
   name: github-node-express-hello-on-pull-request
-  namespace: ns-pacwithpat-8pn88ysj6blqm
+  namespace: ns-pacwithpat-7ruza12dyy5o0
 spec:
   params:
   - name: dockerfile
@@ -25,7 +25,7 @@ spec:
   - name: image-expires-after
     value: 5d
   - name: output-image
-    value: quay.io/ksmster/ns-pacwithpat-8pn88ysj6blqm/github-build-nudge-example/github-node-express-hello:on-pr-{{revision}}
+    value: quay.io/ksmster/ns-pacwithpat-7ruza12dyy5o0/github-build-nudge-example/github-node-express-hello:on-pr-{{revision}}
   - name: path-context
     value: .
   - name: revision
