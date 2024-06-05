@@ -11,7 +11,7 @@ RUN \
   fi
 
 # Copy the dependencies into a Slim Node docker image
-FROM quay.io/ksmster/ns-renovatenudge-pnqgz20x2mrsw/github-build-nudge-example/github-common-nodejs-parent@sha256:216a0fa731c335e849b93971fe4f22584931f943bc24aa1d992e0014fed5cc0d
+FROM quay.io/ksmster/ns-renovatenudge-pnqgz20x2mrsw/github-build-nudge-example/github-common-nodejs-parent@sha256:8810019df91e8db6f060926c415375e431692ebd392bc3d4a4de337c195c3332
 
 # Install app dependencies
 COPY --from=0 /opt/app-root/src/node_modules /opt/app-root/src/node_modules
